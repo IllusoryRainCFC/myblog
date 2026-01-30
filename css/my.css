@@ -1,5 +1,11 @@
 /* Here is your custom css styles. */
-/* 隐藏文章卡片的作者头像+用户名 */
+/* 隐藏轮播文章卡片右下角的作者头像+用户名 */
+.carousel-post .author,
+.carousel-post .author-info {
+    display: none !important;
+}
+/* 隐藏普通文章卡片右下角的作者头像+用户名 */
+.card-meta .author,
 .post-card .author-info {
     display: none !important;
 }
