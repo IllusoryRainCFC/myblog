@@ -4,8 +4,20 @@
 .carousel-post .author-info {
     display: none !important;
 }
-/* 隐藏普通文章卡片右下角的作者头像+用户名 */
-.card-meta .author,
-.post-card .author-info {
-    display: none !important;
+
+#back-to-top {
+    /* 背景色/渐变：把这里的颜色换成你想要的 */
+    background: linear-gradient(45deg, #00e5ff, #00b8d9) !important;
+    /*  hover  hover时的颜色 */
+    background: linear-gradient(45deg, #00e5ff, #00b8d9) !important;
+    /* 圆形弧度（保持圆形就不动） */
+    border-radius: 50% !important;
+    /* 大小可按需调 */
+    width: 50px !important;
+    height: 50px !important;
+}
+
+/* 箭头图标颜色 */
+#back-to-top i {
+    color: #ffffff !important; /* 箭头白色，可改 */
 }
