@@ -1,1 +1,5 @@
 /* Here is your custom css styles. */
+/* 隐藏文章卡片的作者头像+用户名 */
+.post-card .author-info {
+    display: none !important;
+}
