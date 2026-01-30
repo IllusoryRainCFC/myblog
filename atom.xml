@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>IllusoryRain&#39;s Blog</title>
+  <icon>https://illusoryraincfc.github.io/myblog/icon.png</icon>
+  <subtitle>IllusoryRain&#39;s Blog</subtitle>
+  <link href="https://illusoryraincfc.github.io/myblog/atom.xml" rel="self"/>
+  
+  <link href="https://illusoryraincfc.github.io/myblog/"/>
+  <updated>2026-01-30T07:54:39.579Z</updated>
+  <id>https://illusoryraincfc.github.io/myblog/</id>
+  
+  <author>
+    <name>IllusoryRain</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Myfirstblog</title>
+    <link href="https://illusoryraincfc.github.io/myblog/2026/01/30/myfirstblog/"/>
+    <id>https://illusoryraincfc.github.io/myblog/2026/01/30/myfirstblog/</id>
+    <published>2026-01-30T06:03:06.650Z</published>
+    <updated>2026-01-30T07:54:39.579Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;这是我的第一篇博客。这只是个实验。&lt;/p&gt;
+</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
