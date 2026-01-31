@@ -34,6 +34,18 @@
 <link rel="alternate" href="/myblog/atom.xml" title="IllusoryRain's Blog" type="application/atom+xml">
 </head>
 
+<!-- 独立PJAX脚本，无需插件，直接实现无刷新跳转 -->
+<script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script>
+<script>
+  // 初始化PJAX，适配Matery主题
+  document.addEventListener('DOMContentLoaded', function() {
+    const pjax = new Pjax({
+      selectors: ['head title', '.content', '#aplayer'], // 仅替换内容区域，保留播放器
+      cacheBust: false,
+      scrollTo: false
+    });
+  });
+</script>
 
 
 
@@ -301,7 +313,7 @@
                    loop='all'
                    order='random'
                    preload='auto'
-                   volume='0.7'
+                   volume='0.5'
                    list-folded='true'
         >
         </meting-js>
