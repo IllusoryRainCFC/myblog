@@ -1,7 +1,7 @@
 # IllusoryRain's Blog
 > 为什么想做这个博客：看过很多学长学姐的优秀博客，再加上自己的兴趣，于是在大一寒假摸索出来这样一个博客。
 
-- 在线访问：[IllusoryRain's Blog](https://illusoryrainzjuisee.github.io/myblog/)
+- 在线访问：[IllusoryRain's Blog](https://illusoryrainzjuisee.github.io/)
 - 博客框架：[Hexo](https://hexo.io/)
 - 当前主题：[hexo-theme-matery](https://github.com/blinkfox/hexo-theme-matery)
 - 部署平台：[GitHub Pages](https://pages.github.com/)
@@ -19,7 +19,7 @@ hexo v
 ```bash
 hexo s
 ```
-启动后访问 `http://localhost:4000/myblog/` 即可预览博客。
+启动后访问 `http://localhost:4000/` 即可预览博客。
 
 ## 常用命令
 ```bash
