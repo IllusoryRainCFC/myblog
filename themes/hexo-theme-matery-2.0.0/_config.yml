@@ -80,6 +80,7 @@ music:
   server: tencent   #require	music platform: netease, tencent, kugou, xiami, baidu
   type: playlist    #require song, playlist, album, search, artist
   id: 8840148049    #require	song id / playlist id / album id / search keyword
+  api: 'https://api.injahow.cn/meting/?server=:server&type=:type&id=:id&r=:r' # Meting API; default api.i-meto.com is unavailable
   fixed: true       # 开启吸底模式
   autoplay: false   # 是否自动播放
   theme: 'linear-gradient(to right, #87CEEB 0%, #4A90E2 100%)'
@@ -197,6 +198,12 @@ postInfo:
 
 # Whether to activate the 'love' effect of clicking on the page.
 # 是否激活点击页面的'爱心'效果，默认激活.
+
+# 夜间模式切换.
+# 启用后可在导航栏切换，并记住用户选择.
+darkMode:
+  enable: true
+  default: system # system、light、dark
 clicklove:
   enable: true
 
@@ -471,6 +478,7 @@ libs:
     ribbonRefresh: /libs/background/ribbon-refresh.min.js
     ribbon_dynamic: /libs/background/ribbon-dynamic.js
     instantpage: /libs/instantpage/instantpage.js
+    darkMode: /js/dark-mode.js
 
 # The post featured images that needs to be displayed when there is no image.
 # 无文章特色图片时需要显示的文章特色图片.

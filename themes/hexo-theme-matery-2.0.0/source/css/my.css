@@ -1,1 +1,162 @@
-/* Here is your custom css styles. */
+﻿/* 夜间模式 */
+html[data-theme="dark"] {
+    color-scheme: dark;
+    --dark-bg: #121212;
+    --dark-surface: #1e1e1e;
+    --dark-surface-2: #262626;
+    --dark-text: #e6e6e6;
+    --dark-muted: #a9a9a9;
+    --dark-border: #3a3a3a;
+    --dark-link: #80cbc4;
+}
+
+html[data-theme="dark"] body {
+    background-color: var(--dark-bg) !important;
+    color: var(--dark-text) !important;
+}
+
+html[data-theme="dark"] #headNav:not(.nav-transparent),
+html[data-theme="dark"] .page-footer,
+html[data-theme="dark"] .bg-color {
+    background-color: var(--dark-surface) !important;
+    background-image: none !important;
+}
+
+html[data-theme="dark"] .card,
+html[data-theme="dark"] .modal,
+html[data-theme="dark"] .dropdown-content,
+html[data-theme="dark"] .toc-widget,
+html[data-theme="dark"] .side-nav,
+html[data-theme="dark"] .mobile-head {
+    background-color: var(--dark-surface) !important;
+    color: var(--dark-text) !important;
+}
+
+html[data-theme="dark"] .card .card-content,
+html[data-theme="dark"] .article-card-content,
+html[data-theme="dark"] .modal-content,
+html[data-theme="dark"] .search-result {
+    background-color: var(--dark-surface) !important;
+    color: var(--dark-text) !important;
+}
+
+html[data-theme="dark"] h1,
+html[data-theme="dark"] h2,
+html[data-theme="dark"] h3,
+html[data-theme="dark"] h4,
+html[data-theme="dark"] h5,
+html[data-theme="dark"] h6,
+html[data-theme="dark"] .card-title,
+html[data-theme="dark"] .post-title,
+html[data-theme="dark"] .article-title {
+    color: var(--dark-text) !important;
+}
+
+html[data-theme="dark"] p,
+html[data-theme="dark"] li,
+html[data-theme="dark"] td,
+html[data-theme="dark"] th,
+html[data-theme="dark"] label,
+html[data-theme="dark"] .post-meta,
+html[data-theme="dark"] .post-info,
+html[data-theme="dark"] .summary {
+    color: var(--dark-text) !important;
+}
+
+html[data-theme="dark"] a,
+html[data-theme="dark"] .post-title a,
+html[data-theme="dark"] .article-title a {
+    color: var(--dark-link);
+}
+
+html[data-theme="dark"] a:hover {
+    color: #b2dfdb;
+}
+
+html[data-theme="dark"] hr,
+html[data-theme="dark"] .divider,
+html[data-theme="dark"] table,
+html[data-theme="dark"] th,
+html[data-theme="dark"] td {
+    border-color: var(--dark-border) !important;
+}
+
+html[data-theme="dark"] blockquote {
+    border-left-color: #80cbc4 !important;
+    background-color: var(--dark-surface-2) !important;
+    color: var(--dark-text) !important;
+}
+
+html[data-theme="dark"] code:not([class*="language-"]),
+html[data-theme="dark"] pre {
+    background-color: #202124 !important;
+    color: #e8eaed !important;
+}
+
+html[data-theme="dark"] input,
+html[data-theme="dark"] textarea,
+html[data-theme="dark"] select,
+html[data-theme="dark"] .search-input {
+    color: var(--dark-text) !important;
+    background-color: var(--dark-surface-2) !important;
+    border-color: var(--dark-border) !important;
+}
+
+html[data-theme="dark"] input::placeholder,
+html[data-theme="dark"] textarea::placeholder {
+    color: var(--dark-muted) !important;
+}
+
+html[data-theme="dark"] .collection,
+html[data-theme="dark"] .collection .collection-item {
+    background-color: var(--dark-surface) !important;
+    border-color: var(--dark-border) !important;
+    color: var(--dark-text) !important;
+}
+
+html[data-theme="dark"] .collection .collection-item:hover,
+html[data-theme="dark"] .dropdown-content li:hover {
+    background-color: var(--dark-surface-2) !important;
+}
+
+html[data-theme="dark"] #cover,
+html[data-theme="dark"] .bg-cover {
+    filter: brightness(0.72);
+}
+
+html[data-theme="dark"] .post_share .social-share-icon {
+    background-color: var(--dark-surface) !important;
+}
+
+/* 桌面端和移动端的切换按钮 */
+.dark-mode-toggle {
+    border: 0;
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+    font: inherit;
+}
+
+.nav-menu .dark-mode-toggle {
+    display: block;
+    padding: 0 15px;
+    height: 64px;
+    line-height: 64px;
+}
+
+.dark-mode-mobile-item .dark-mode-toggle {
+    display: block;
+    width: 100%;
+    padding: 0 30px;
+    text-align: left;
+}
+
+.dark-mode-toggle:hover {
+    background-color: rgba(128, 203, 196, 0.15);
+}
+
+@media only screen and (max-width: 992px) {
+    .nav-menu .dark-mode-toggle-item {
+        display: none;
+    }
+}
